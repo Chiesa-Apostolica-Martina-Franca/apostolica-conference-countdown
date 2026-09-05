@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Countdown alla Apostolica Conference 2027."
+    />
+    <meta name="theme-color" content="#1d120d" />
+    <title>Apostolica Conference 2027 — Countdown</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background" aria-hidden="true"></div>
+    <div class="veil" aria-hidden="true"></div>
+
+    <main class="countdown-shell">
+      <header class="event-heading">
+        <p class="eyebrow">Chiesa Apostolica in Italia</p>
+        <h1>Apostolica <em>Conference</em></h1>
+      </header>
+
+      <section class="countdown" aria-label="Tempo rimanente alla conferenza" aria-live="polite">
+        <div class="unit">
+          <strong id="days">000</strong>
+          <span>giorni</span>
+        </div>
+        <span class="separator" aria-hidden="true">:</span>
+        <div class="unit">
+          <strong id="hours">00</strong>
+          <span>ore</span>
+        </div>
+        <span class="separator" aria-hidden="true">:</span>
+        <div class="unit">
+          <strong id="minutes">00</strong>
+          <span>minuti</span>
+        </div>
+      </section>
+
+      <p class="started-message" id="started-message" hidden>
+        La conferenza è iniziata
+      </p>
+
+      <footer class="event-details">
+        <p>29 · 30 · 31 maggio 2027</p>
+        <span aria-hidden="true"></span>
+        <p>Roman Sport City · Pomezia</p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

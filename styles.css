@@ -74,7 +74,6 @@ body {
   position: relative;
   display: grid;
   place-items: center;
-  min-height: clamp(4.8rem, 9.6vw, 9rem);
   margin: 0;
   isolation: isolate;
 }
@@ -90,32 +89,11 @@ body {
   filter: blur(12px);
 }
 
-.wordmark-main {
-  color: #100c0a;
-  font-family: "League Spartan", sans-serif;
-  font-size: clamp(3.1rem, 8.4vw, 8.2rem);
-  font-weight: 800;
-  letter-spacing: -0.075em;
-  line-height: 0.78;
-  text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(255, 238, 213, 0.24), 0 0.08em 0.22em rgba(245, 181, 105, 0.18);
-}
-
-.wordmark-script {
-  position: absolute;
-  z-index: 1;
-  top: 39%;
-  left: 50%;
-  color: #fffaf2;
-  font-family: "Allura", cursive;
-  font-size: clamp(3.5rem, 9.2vw, 9rem);
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 0.72;
-  text-transform: none;
-  text-shadow: 0 0.06em 0.14em rgba(34, 15, 7, 0.46), 0 0.16em 0.34em rgba(34, 15, 7, 0.28);
-  transform: translateX(-48%) rotate(-2deg);
-  white-space: nowrap;
+.wordmark-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0.4rem 0.9rem rgba(24, 10, 4, 0.28));
 }
 
 .countdown {
@@ -214,17 +192,8 @@ body {
     width: 100%;
   }
 
-  .event-wordmark {
-    min-height: clamp(4.4rem, 23vw, 7rem);
-  }
-
-  .wordmark-main {
-    font-size: clamp(2.75rem, 14.5vw, 5.2rem);
-  }
-
-  .wordmark-script {
-    top: 40%;
-    font-size: clamp(3.2rem, 16vw, 5.6rem);
+  .wordmark-image {
+    width: min(100%, 36rem);
   }
 
   .countdown {

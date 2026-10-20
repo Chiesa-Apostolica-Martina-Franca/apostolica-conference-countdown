@@ -7,12 +7,12 @@
       name="description"
       content="Countdown alla Apostolica Conference 2027."
     />
-    <meta name="theme-color" content="#1d120d" />
+    <meta name="theme-color" content="#101c52" />
     <title>Apostolica Conference 2027 — Countdown</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -23,8 +23,8 @@
 
     <main class="countdown-shell">
       <header class="event-heading">
-        <p class="eyebrow">Chiesa Apostolica in Italia</p>
-        <h1 class="event-wordmark" aria-label="Apostolica Conference">
+        <h1 class="event-wordmark">
+          <span class="sr-only">Apostolica Conference — 4–6 giugno 2027, Pomezia</span>
           <img
             class="wordmark-image"
             src="assets/apostolica-conference-wordmark.png"
@@ -32,9 +32,14 @@
             aria-hidden="true"
           />
         </h1>
+        <img
+          class="centenary-mark"
+          src="assets/centenary-100a-clean.png"
+          alt="100 anni della Chiesa Apostolica in Italia"
+        />
       </header>
 
-      <section class="countdown" aria-label="Tempo rimanente alla conferenza" aria-live="polite">
+      <section class="countdown" data-ui="countdown" aria-label="Tempo rimanente alla conferenza" aria-live="polite">
         <div class="unit">
           <strong id="days">000</strong>
           <span>giorni</span>
@@ -56,9 +61,8 @@
       </p>
 
       <footer class="event-details">
-        <p>29 · 30 · 31 maggio 2027</p>
-        <span aria-hidden="true"></span>
-        <p>Roman Sport City · Pomezia</p>
+        <p>4–6 giugno 2027</p>
+        <p>Pomezia · Roma</p>
       </footer>
     </main>
 

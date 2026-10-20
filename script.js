@@ -1,4 +1,4 @@
-const EVENT_START = new Date("2027-05-29T00:00:00+02:00");
+const EVENT_START = new Date("2027-06-04T00:00:00+02:00");
 
 const daysElement = document.querySelector("#days");
 const hoursElement = document.querySelector("#hours");
@@ -25,8 +25,8 @@ function updateCountdown() {
   const minutes = totalMinutes % 60;
 
   daysElement.textContent = pad(days, 3);
-  hoursElement.textContent = pad(hours);
-  minutesElement.textContent = pad(minutes);
+  hoursElement.textContent = String(hours);
+  minutesElement.textContent = String(minutes);
 }
 
 updateCountdown();

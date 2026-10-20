@@ -25,12 +25,28 @@
       <header class="event-heading">
         <h1 class="event-wordmark">
           <span class="sr-only">Apostolica Conference — 4–6 giugno 2027, Pomezia</span>
-          <img
+          <svg
             class="wordmark-image"
-            src="assets/apostolica-conference-wordmark.png"
-            alt=""
+            viewBox="0 0 2079 756"
             aria-hidden="true"
-          />
+          >
+            <defs>
+              <filter id="wordmark-brand-colours" color-interpolation-filters="sRGB">
+                <feComponentTransfer>
+                  <feFuncR type="table" tableValues="1 1" />
+                  <feFuncG type="table" tableValues="1 0.3568627" />
+                  <feFuncB type="table" tableValues="1 0.0980392" />
+                  <feFuncA type="identity" />
+                </feComponentTransfer>
+              </filter>
+            </defs>
+            <image
+              width="2079"
+              height="756"
+              href="assets/apostolica-conference-wordmark.png"
+              filter="url(#wordmark-brand-colours)"
+            />
+          </svg>
         </h1>
         <img
           class="centenary-mark"

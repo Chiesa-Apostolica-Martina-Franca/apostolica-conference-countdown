@@ -85,7 +85,6 @@ body {
   display: block;
   width: 100%;
   height: auto;
-  filter: brightness(0) invert(1);
   animation: enter 700ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
 }
 
